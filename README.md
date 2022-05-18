@@ -10,7 +10,16 @@ The plugin will allow you to get rid of creating css wrapper classes.
 
 ---
 
-## Basic Usage
+## Contents
+
+- [Quick start](#quick-start)
+- [Directives](#directives)
+- [Grid guide](#grid-guide)
+- [Dinamic layout guide](#dinamic-layout-guide)
+
+---
+
+## Quick start
 
 ### Installation
 
@@ -29,8 +38,6 @@ import VContainer from "@chepuhasasha/v-container";
 
 createApp(App).use(VContainer).mount("#app");
 ```
-
----
 
 ### Layout
 
@@ -72,7 +79,7 @@ _MyComponent.vue_
 
 ---
 
-### Directives
+## Directives
 
 Directives allow you to quickly access styles.
 
@@ -95,10 +102,6 @@ Directives allow you to quickly access styles.
 | `v-y-overflow='"auto"'`  | string  | _`ovwrflow-y: auto;`_                                             |
 | `v-x-align='"center"'`   | string  | if v-col _`align-items: center;`_ else `justify-content: center;` |
 | `v-y-align='"center"'`   | string  | if v-col _`justify-content: center;`_ else `align-items: center;` |
-
----
-
-## Container guide
 
 ---
 
@@ -138,7 +141,9 @@ Directives allow you to quickly access styles.
 
 ![page template comp](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/PAGECOMP.svg)
 
-### Dinamic layout
+---
+
+## Dinamic layout guide
 
 ```html
 <template>
@@ -173,11 +178,15 @@ Directives allow you to quickly access styles.
   });
 
   const changeMode = () => {
-    layout.mode = lang.mode === "mobile" ? "decktop" : "mobile";
+    layout.mode = layout.mode === "mobile" ? "decktop" : "mobile";
   };
 </script>
 ```
 
+_mobile mode_
+
 ![page template comp mobile](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/PAGECOMPM.svg)
+
+---
 
 [![cover](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/HEADER.svg)](https://github.com/chepuhasasha/v-container)
