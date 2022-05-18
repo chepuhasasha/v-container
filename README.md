@@ -8,8 +8,6 @@ The plugin will allow you to get rid of creating css wrapper classes.
 [![install size](https://badgen.net/packagephobia/install/@chepuhasasha/v-container?label=npm+install)](https://packagephobia.now.sh/result?p=@chepuhasasha/v-container)
 [![open issues](https://badgen.net/github/open-issues/chepuhasasha/v-container?label=issues)](https://github.com/chepuhasasha/v-container/issues)
 
-![cover](cover.svg)
-
 ---
 
 ## Basic Usage
@@ -97,3 +95,89 @@ Directives allow you to quickly access styles.
 | `v-y-overflow='"auto"'`  | string  | _`ovwrflow-y: auto;`_                                             |
 | `v-x-align='"center"'`   | string  | if v-col _`align-items: center;`_ else `justify-content: center;` |
 | `v-y-align='"center"'`   | string  | if v-col _`justify-content: center;`_ else `align-items: center;` |
+
+---
+
+## Container guide
+
+---
+
+## Grid guide
+
+### Page template
+
+```html
+<template>
+  <div
+    v-grid
+    v-grid-cols-template='"repeat(3, 1fr)"'
+    v-grid-rows-template='"repeat(3, 1fr)"'
+  ></div>
+</template>
+```
+
+![page template 3x3](./assets/PAGE.svg)
+
+### Add component
+
+```html
+<template>
+  <div
+    v-grid
+    v-grid-cols-template='"repeat(3, 1fr)"'
+    v-grid-rows-template='"repeat(3, 1fr)"'
+  >
+    <my-component
+      v-area='"2/2/3/3"'
+      v-width='"100%"'
+      v-height='"100%"'
+    >
+  </div>
+</template>
+```
+
+![page template comp](./assets/PAGECOMP.svg)
+
+### Dinamic layout
+
+```html
+<template>
+  <div
+    v-grid
+    v-grid-cols-template='grid[mode].cols'
+    v-grid-rows-template='grid[mode].rows'
+  >
+    <my-component
+      v-area='blocks.myComponent[mode]'
+      v-width='"100%"'
+      v-height='"100%"'
+    >
+  </div>
+</template>
+
+<script setup lang="ts">
+  import { computed, reactive } from "vue";
+
+  const layout = reactive({
+    mode: "decktop",
+    grid: {
+      decktop: { cols: "repeat(3, 1fr)", rows: "repeat(3, 1fr)"},
+      mobile: { cols: "repeat(3, 1fr)", rows: "repeat(1, 1fr)"},
+    },
+    blocks: {
+      myComponent: {
+        decktop: "2/2/3/3",
+        mobile: "2/1/3/2",
+      },
+    }
+  });
+
+  const changeMode = () => {
+    layout.mode = lang.mode === "mobile" ? "decktop" : "mobile";
+  };
+</script>
+```
+
+![page template comp mobile](./assets/PAGECOMPM.svg)
+
+[![cover](./assets/HEADER.svg)](https://github.com/chepuhasasha/v-container)
