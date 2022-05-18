@@ -1,6 +1,6 @@
 # v-container
 
-container plagin
+The plugin will allow you to get rid of creating css wrapper classes.
 
 [![stars](https://badgen.net/github/stars/chepuhasasha/v-container)](https://github.com/chepuhasasha/v-container)
 [![latest version](https://badgen.net/npm/v/@chepuhasasha/v-container)](https://github.com/chepuhasasha/v-container)
@@ -17,3 +17,39 @@ container plagin
 ```
 npm install @chepuhasasha/v-container
 ```
+
+### Connection
+
+Include plugin in `main.ts/js`
+
+```js
+import { createApp } from "vue";
+import App from "./App.vue";
+import VContainer from "@chepuhasasha/v-container";
+
+createApp(App).use(VContainer).mount("#app");
+```
+
+### Directives
+
+Directives allow you to quickly access styles.
+
+| directive                    | type    | css equivalent                                                    |
+| :--------------------------- | ------- | :---------------------------------------------------------------- |
+| **`v-flex`**                 | boolean | _`display: flex;`_                                                |
+| **`v-grid`**                 | boolean | _`display: grid;`_                                                |
+| **`v-grid-cols-template`**   | string  | _`display: grid;`_                                                |
+| **`v-grid-rows-template`**   | string  | _`display: grid;`_                                                |
+| **`v-col`**                  | boolean | _`flex-direction: column;`_                                       |
+| **`v-width='"100px"'`**      | string  | _`width: 100px;`_                                                 |
+| **`v-min-width='"100px"'`**  | string  | _`min-width: 100px;`_                                             |
+| **`v-max-width='"100px"'`**  | string  | _`max-width: 100px;`_                                             |
+| **`v-height='"100px"'`**     | string  | _`height: 100px;`_                                                |
+| **`v-min-height='"100px"'`** | string  | _`min-height: 100px;`_                                            |
+| **`v-max-height='"100px"'`** | string  | _`max-height: 100px;`_                                            |
+| **`v-gap='10'`**             | number  | _`gap: 10px;`_                                                    |
+| **`v-padding='"10px 5px"'`** | string  | _`padding: 10px 5px;`_                                            |
+| **`v-x-overflow='"auto"'`**  | string  | _`ovwrflow-x: auto;`_                                             |
+| **`v-y-overflow='"auto"'`**  | string  | _`ovwrflow-y: auto;`_                                             |
+| **`v-x-align='"center"'`**   | string  | if v-col _`align-items: center;`_ else `justify-content: center;` |
+| **`v-y-align='"auto"'`**     | string  | if v-col _`justify-content: center;`_ else `align-items: center;` |
