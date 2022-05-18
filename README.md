@@ -8,6 +8,8 @@ The plugin will allow you to get rid of creating css wrapper classes.
 [![install size](https://badgen.net/packagephobia/install/@chepuhasasha/v-container?label=npm+install)](https://packagephobia.now.sh/result?p=@chepuhasasha/v-container)
 [![open issues](https://badgen.net/github/open-issues/chepuhasasha/v-container?label=issues)](https://github.com/chepuhasasha/v-container/issues)
 
+![cover](cover.svg)
+
 ---
 
 ## Basic Usage
@@ -60,7 +62,7 @@ _MyComponent.vue_
 
 ```html
 <div
-  style="width: 300px; display: flex; flex-direction: column; gap: 10px; padding: 40px; align-items: center;"
+  style="width: 300px; display: flex; flex-direction: column; gap: 20px; padding: 40px; align-items: center;"
 >
   <h1>My component</h1>
   <p>
