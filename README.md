@@ -116,7 +116,7 @@ Directives allow you to quickly access styles.
 </template>
 ```
 
-![page template 3x3](./assets/PAGE.svg)
+![page template 3x3](https://raw.githubusercontent.com/chepuhasasha/v-container/371c25479566a3c9089b307fd0f2ea06df1adb7e/assets/PAGE.svg)
 
 ### Add component
 
@@ -136,7 +136,7 @@ Directives allow you to quickly access styles.
 </template>
 ```
 
-![page template comp](./assets/PAGECOMP.svg)
+![page template comp](https://raw.githubusercontent.com/chepuhasasha/v-container/371c25479566a3c9089b307fd0f2ea06df1adb7e/assets/PAGECOMP.svg)
 
 ### Dinamic layout
 
@@ -178,6 +178,6 @@ Directives allow you to quickly access styles.
 </script>
 ```
 
-![page template comp mobile](./assets/PAGECOMPM.svg)
+![page template comp mobile](https://raw.githubusercontent.com/chepuhasasha/v-container/371c25479566a3c9089b307fd0f2ea06df1adb7e/assets/PAGECOMPM.svg)
 
-[![cover](./assets/HEADER.svg)](https://github.com/chepuhasasha/v-container)
+[![cover](https://raw.githubusercontent.com/chepuhasasha/v-container/371c25479566a3c9089b307fd0f2ea06df1adb7e/assets/HEADER.svg)](https://github.com/chepuhasasha/v-container)
