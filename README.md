@@ -1,6 +1,6 @@
 # v-container
 
-## ![logo](./assets/HEADER.svg)
+## ![logo](https://raw.githubusercontent.com/chepuhasasha/v-container/feefdf4e64ab1b65026d1bba7cbbfa63b5fdd6c3/assets/HEADER.svg)
 
 This plugin for VUE makes it easy to set up block geometry.
 
@@ -114,7 +114,7 @@ Directives allow you to quickly access styles.
 </template>
 ```
 
-![page template 3x3](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/PAGE.svg)
+![page template 3x3](https://raw.githubusercontent.com/chepuhasasha/v-container/feefdf4e64ab1b65026d1bba7cbbfa63b5fdd6c3/assets/PAGE.svg)
 
 ### Add component
 
@@ -134,7 +134,7 @@ Directives allow you to quickly access styles.
 </template>
 ```
 
-![page template comp](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/PAGECOMP.svg)
+![page template comp](https://raw.githubusercontent.com/chepuhasasha/v-container/feefdf4e64ab1b65026d1bba7cbbfa63b5fdd6c3/assets/PAGECOMP.svg)
 
 ---
 
@@ -180,6 +180,4 @@ Directives allow you to quickly access styles.
 
 _mobile mode_
 
-![page template comp mobile](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/PAGECOMPM.svg)
-
-[![cover](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/HEADER.svg)](https://github.com/chepuhasasha/v-container)
+![page template comp mobile](https://raw.githubusercontent.com/chepuhasasha/v-container/feefdf4e64ab1b65026d1bba7cbbfa63b5fdd6c3/assets/PAGECOMPM.svg)
