@@ -1,6 +1,8 @@
 # v-container
 
-The plugin will allow you to get rid of creating css wrapper classes.
+## ![logo](./assets/HEADER.svg)
+
+This plugin for VUE makes it easy to set up block geometry.
 
 [![stars](https://badgen.net/github/stars/chepuhasasha/v-container)](https://github.com/chepuhasasha/v-container)
 [![latest version](https://badgen.net/npm/v/@chepuhasasha/v-container)](https://github.com/chepuhasasha/v-container)
@@ -27,8 +29,6 @@ The plugin will allow you to get rid of creating css wrapper classes.
 npm install @chepuhasasha/v-container
 ```
 
-### Connection
-
 Include plugin in `main.ts/js`
 
 ```js
@@ -39,15 +39,15 @@ import VContainer from "@chepuhasasha/v-container";
 createApp(App).use(VContainer).mount("#app");
 ```
 
-### Layout
+---
 
-#### In component
+### Use in template
 
-_MyComponent.vue_
+The plugin provides quick access to the properties of geometric characteristics. More about directives in the section [Directives](#directives)
 
 ```html
 <template>
-  <div v-flex v-col v-gap="20" v-padding='"40px"' v-x-align="'center'">
+  <div v-flex v-col v-gap="20" v-padding='"20px"' v-x-align="'center'">
     <h1>My component</h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -57,17 +57,11 @@ _MyComponent.vue_
 </template>
 ```
 
-#### Outside of the component
-
-```html
-<my-component v-width='"300px"' />
-```
-
 #### Result in browser
 
 ```html
 <div
-  style="width: 300px; display: flex; flex-direction: column; gap: 20px; padding: 40px; align-items: center;"
+  style="display: flex; flex-direction: column; gap: 20px; padding: 20px; align-items: center;"
 >
   <h1>My component</h1>
   <p>
@@ -85,11 +79,6 @@ Directives allow you to quickly access styles.
 
 | directive                | type    | css equivalent                                                    |
 | :----------------------- | ------- | :---------------------------------------------------------------- |
-| `v-flex`                 | boolean | _`display: flex;`_                                                |
-| `v-grid`                 | boolean | _`display: grid;`_                                                |
-| `v-grid-cols-template`   | string  | _`display: grid;`_                                                |
-| `v-grid-rows-template`   | string  | _`display: grid;`_                                                |
-| `v-col`                  | boolean | _`flex-direction: column;`_                                       |
 | `v-width='"100px"'`      | string  | _`width: 100px;`_                                                 |
 | `v-min-width='"100px"'`  | string  | _`min-width: 100px;`_                                             |
 | `v-max-width='"100px"'`  | string  | _`max-width: 100px;`_                                             |
@@ -100,8 +89,14 @@ Directives allow you to quickly access styles.
 | `v-padding='"10px 5px"'` | string  | _`padding: 10px 5px;`_                                            |
 | `v-x-overflow='"auto"'`  | string  | _`ovwrflow-x: auto;`_                                             |
 | `v-y-overflow='"auto"'`  | string  | _`ovwrflow-y: auto;`_                                             |
+| `v-flex`                 | boolean | _`display: flex;`_                                                |
+| `v-col`                  | boolean | _`flex-direction: column;`_                                       |
 | `v-x-align='"center"'`   | string  | if v-col _`align-items: center;`_ else `justify-content: center;` |
 | `v-y-align='"center"'`   | string  | if v-col _`justify-content: center;`_ else `align-items: center;` |
+| `v-grid`                 | boolean | _`display: grid;`_                                                |
+| `v-grid-cols-template`   | string  | _`display: grid;`_                                                |
+| `v-grid-rows-template`   | string  | _`display: grid;`_                                                |
+| `v-area='"1/1/2/2"'`     | string  | _`grid-area: 1/1/2/2;`_                                           |
 
 ---
 
@@ -186,7 +181,5 @@ Directives allow you to quickly access styles.
 _mobile mode_
 
 ![page template comp mobile](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/PAGECOMPM.svg)
-
----
 
 [![cover](https://raw.githubusercontent.com/chepuhasasha/v-container/349d4a31cc64aa40a2f65a480718dda591c391ad/assets/HEADER.svg)](https://github.com/chepuhasasha/v-container)
