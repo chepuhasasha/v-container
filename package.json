@@ -1,6 +1,6 @@
 {
   "name": "@chepuhasasha/v-container",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "description": "Plugin simplifies template layout on VUE",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
